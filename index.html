@@ -24,7 +24,7 @@
 <body>
 
   <!-- HERO SECTION -->
-  <section class="hero reveal">
+  <section class="hero">
     <div class="container">
       <h1>Portfolio</h1>
       <p>I’m a UI/UX Designer creating intuitive and visually appealing digital experiences.visually appearing app interfaces like, mobile app and web experience focused on simplicity,accessibility and business impact.</p>
@@ -33,7 +33,7 @@
   </section>
 
   <!-- ABOUT SECTION -->
-  <section class="about reveal">
+  <section class="about container">
      <div class="about-text">
       <h2>About Me</h2>
       <p>
@@ -44,7 +44,7 @@ design. I enjoy turning ideas into meaningful digital experience that are easy t
   </section>
   <!-- SKILLS -->
 <section>
-    <section class="skills reveal">
+    <section class="skills container">
     <h2>Skills</h2>
     <div class="skills">
         <div class="skill">Wireframing</div>
@@ -57,7 +57,7 @@ design. I enjoy turning ideas into meaningful digital experience that are easy t
         <div class="skill">User Journey Mapping</div>
     </div>
     <h2>Tools</h2>
-         <section class="Tools reveal">
+         <section class="Tools container">
     <div class="Tools">
         <div class="Tools">Figma</div>
         <div class="Tools">Photoshop</div>
@@ -69,7 +69,7 @@ design. I enjoy turning ideas into meaningful digital experience that are easy t
 </section>
   <!-- EDUCATION -->
 <section>
-     <section class="Education-section">
+     <section class="Education container">
     <h2>Education</h2>
     <div class="card edu">
         <p><b>Bachelor’s Degree in B.Sc Computer Science</b></p>
@@ -132,7 +132,7 @@ design. I enjoy turning ideas into meaningful digital experience that are easy t
   </section>
 
   <!-- CONTACT SECTION -->
-  <section class="contact reveal">
+  <section class="contact">
     <div class="container">
       <h2>Contact</h2>
 
@@ -161,21 +161,7 @@ design. I enjoy turning ideas into meaningful digital experience that are easy t
       document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
     }
   </script>
-    <script>
-window.addEventListener("scroll", function() {
-  const reveals = document.querySelectorAll(".reveal");
-
-  reveals.forEach((el) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
-      el.classList.add("active");
-    }
-  });
-});
-</script>
-
+   
 </body>
 </html>
     
