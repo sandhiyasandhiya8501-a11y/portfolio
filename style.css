@@ -95,10 +95,10 @@ body {
   opacity: 0.8;
 }
 /* SKILLS GRID */
-.skills container h2 {
+.skills-section h2 {
   text-align: center;
-}
-.skills {
+  margin-bottom: 25px;
+}.skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
