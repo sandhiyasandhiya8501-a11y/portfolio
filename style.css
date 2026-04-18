@@ -261,3 +261,17 @@ body {
     font-size: 40px;
   }
 }
+.skill, .Tools {
+  animation: floatUp 1s ease forwards;
+}
+
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
