@@ -161,6 +161,20 @@ design. I enjoy turning ideas into meaningful digital experience that are easy t
       document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
     }
   </script>
+    <script>
+window.addEventListener("scroll", function() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((el) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
