@@ -248,21 +248,4 @@ body {
   }
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 900px) {
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-}
-
-
 
