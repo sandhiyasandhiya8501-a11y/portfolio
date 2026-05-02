@@ -261,3 +261,149 @@ body {
     font-size: 40px;
   }
 }
+/* ---------------- GLOBAL SECTION ANIMATION ---------------- */
+section {
+  animation: fadeUp 1s ease both;
+}
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- FLOATING HERO CONTENT ---------------- */
+.hero-content {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ---------------- HERO TEXT ANIMATIONS ---------------- */
+.hero h1 {
+  animation: slideDown 1.2s ease forwards;
+}
+
+.hero p {
+  animation: fadeIn 2s ease forwards;
+}
+
+.hero button {
+  animation: zoomIn 1.5s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---------------- ABOUT IMAGE ANIMATION ---------------- */
+.about img {
+  animation: floatImage 5s ease-in-out infinite;
+  box-shadow: 0 15px 35px rgba(77,168,218,0.3);
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* ---------------- CARD HOVER GLOW ---------------- */
+.skill,
+.project-card,
+.Tools {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill::before,
+.project-card::before,
+.Tools::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(77,168,218,0.15),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.skill:hover::before,
+.project-card:hover::before,
+.Tools:hover::before {
+  top: 100%;
+  left: 100%;
+}
+
+/* ---------------- BUTTON PULSE EFFECT ---------------- */
+.hero button,
+.contact button,
+.btn {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(77,168,218,0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(77,168,218,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(77,168,218,0);
+  }
+}
+
+/* ---------------- CONTACT FORM ANIMATION ---------------- */
+.contact form {
+  animation: fadeUp 1.2s ease;
+}
+
+/* ---------------- SMOOTH IMAGE ZOOM ---------------- */
+.project-card img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
